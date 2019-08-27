@@ -115,5 +115,24 @@ namespace CourseWorkLibrary
         }
 
         //TO DO: ToString Method 
+
+    }
+
+    //Class Created for testing 
+    public class CourseWorkUnitTesting
+    {
+        public void UnitTestCategory()
+        {
+            //TO DO: declare instance of category
+            //       perform testing on the properties
+            //       print pass/fail message
+        }
+
+        public void UnitTestAssignment()
+        {
+            //TO DO: declare instance of assigment
+            //       perform testing on the properties
+            //       print pass/fail message
+        }
     }
 }
