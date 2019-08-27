@@ -14,12 +14,12 @@
 
 namespace CourseWorkLibrary
 {
-    
+    //First Class Category takes name and percent variables
     public class Category{
 
         //Member Variables
-        private String name;
-        private Double percentage;
+        private string name;
+        private double percentage;
 
         //Constructor
         public Category()
@@ -27,5 +27,93 @@ namespace CourseWorkLibrary
 
         }
 
+        //Using C# Properties with string
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+
+        //Using C# Properties with double 
+        public double Percentage
+        {
+            get
+            {
+                return percentage;
+            }
+
+            set
+            {
+                percentage = value;
+            }
+        }
+
+       //To DO: ToString method
+    }
+
+    //Second Class takes name, description & categoryName variables
+    public class Assignment
+    {
+        //Memeber Variables 
+        private string name;
+        private string description;
+        private string categoryName;
+
+        //Constructor
+        public Assignment()
+        {
+
+        }
+
+        //Get & Set using C# properties 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+
+            }
+        }
+
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+
+            set
+            {
+                description = value;
+            }
+
+        }
+
+        public string CategoryName
+        {
+            get
+            {
+                return categoryName;
+            }
+
+            set
+            {
+                categoryName = value;
+            }
+        }
+
+        //TO DO: ToString Method 
     }
 }
