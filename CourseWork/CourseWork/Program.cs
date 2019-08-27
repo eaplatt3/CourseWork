@@ -4,17 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseWorkLibrary { 
+namespace CourseWorkLibrary {
 
     namespace CourseWork
     {
         class Program
+        {
+            static void Main(string[] args)
             {
-            static void Main(string[] args){
-
-                string num = "0";
+                //Variables
+                string num;
                 int i;
 
+                //Loop to loop menu
                 do
                 {
                     Console.WriteLine("CourseWork Testing Menu");
@@ -26,12 +28,14 @@ namespace CourseWorkLibrary {
                     num = Console.ReadLine();
                     Console.WriteLine("");
 
+                    //Parse string to int 
                     if (!Int32.TryParse(num, out i))
                     {
 
                     }
-                    
-                    if(i == 1)
+
+                    //Checks if user inputed 1
+                    if (i == 1)
                     {
                         Console.WriteLine("**********************");
                         Console.WriteLine("Unit Testing: Category");
@@ -41,6 +45,7 @@ namespace CourseWorkLibrary {
                         Console.WriteLine("");
                     }
 
+                    //Checks if user inputed 2
                     if (i == 2)
                     {
                         Console.WriteLine("**********************");
@@ -52,23 +57,22 @@ namespace CourseWorkLibrary {
                         Console.WriteLine("");
                     }
 
-                    if(i < 1 || i > 3)
+                    //Checks for vaild user input
+                    if (i < 1 || i > 3)
                     {
                         Console.WriteLine("Invaild Input");
                         Console.WriteLine("Enter 1, 2 or 3");
                         Console.WriteLine("");
                     }
 
-                } while (i != 3);
+                } while (i != 3); //Loop will not exit untill user inputs 3 
 
+                //Checks if user inputed 3
                 if (i == 3)
                 {
+                    //Terminates Application
                     System.Environment.Exit(1);
                 }
-
-
-
-
 
             }
         }
