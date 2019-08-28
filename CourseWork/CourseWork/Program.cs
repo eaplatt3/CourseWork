@@ -65,7 +65,7 @@ namespace CourseWorkLibrary {
                         Console.WriteLine("");
                     }
 
-                } while (i != 3); //Loop will not exit untill user inputs 3 
+                } while (i != 3); //Loop will not exit until user inputs 3 
 
                 //Checks if user inputed 3
                 if (i == 3)
