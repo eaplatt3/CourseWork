@@ -16,6 +16,7 @@ namespace CourseWorkLibrary {
                 string num;
                 int i;
 
+                #region Do while Loop
                 //Loop to loop menu
                 do
                 {
@@ -66,6 +67,7 @@ namespace CourseWorkLibrary {
                     }
 
                 } while (i != 3); //Loop will not exit until user inputs 3 
+                #endregion
 
                 //Checks if user inputed 3
                 if (i == 3)
